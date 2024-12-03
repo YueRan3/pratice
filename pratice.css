@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.csspratice {
+   width: 500px; 
+   height: 300px;
+   border: 2px solid rgb(7, 107, 38);
+   border-radius: 8px;
+   padding: 15px;
+   /*width: 100%;*/
+   box-sizing: border-box;
+   margin: 20px auto;
+   background-color: rgb(24, 201, 80);
+   box-shadow: 5px 5px 5px gray;
+}
+
+.csspratice p {
+    color: rgb(38, 35, 35);
+    text-indent: 2em;
+}
+
+.csspratice h1 {
+    font-size: 50px;
+    font-family: '黑体';
+    text-align: center;
+
+    background-color: cyan;
+    height: 80px;
+    line-height: 80px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.colorbox {
+    width: 100px;
+    height:100px;
+    background-color: orange;
+    transition: all 1s linear;
+    position: absolute;
+    top: 30px;
+    left: 800px;
+}
+
+.colorbox:hover {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+}
+
+.changebox {
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    transition: all 1s linear;
+    position: absolute;
+    top: 30px;
+    left: 500px;
+}
+
+.changebox:hover{
+    transform: translate(100px 50px);
+    background-color: blueviolet;
+    transform: rotate(45deg);
+
+
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    /*transition: all 1s;*/
+    animation: changcolor 5s infinite;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    border-radius: 50px;
+}
+
+@keyframes changcolor {
+    0% {
+        background-color: red;
+    }
+    30% {
+        background-color: orange;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+        background-color: green;
+    }
+    80% {
+        background-color:blue;
+    }
+    90% {
+        background-color: purple;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color:lightblue;
+    animation: change 5s infinite;
+    position: absolute;
+    top: 30px;
+    left: 1100px;
+    border-radius: 50px;
+}
+
+@keyframes change {
+    0% {
+        width: 100px;
+        height:100px;
+    }
+    50% {
+        width: 200px;
+        height: 200px;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
